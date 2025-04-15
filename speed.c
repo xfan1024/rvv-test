@@ -7,6 +7,7 @@
 
 extern float fvector128_norm(const float vec[128]);
 extern void fvector128_normalize(float vec[128]);
+extern int should_skip(void);
 
 uint64_t timespec_diff(const struct timespec *a, const struct timespec *b)
 {
@@ -120,6 +121,10 @@ err:
 
 int main(int argc, char *argv[])
 {
+    if (should_skip())
+    {
+        return 100;
+    }
     if (argc < 2 || strcmp(argv[1], "norm") == 0)
     {
         speedtest_fvector128_norm();
@@ -135,3 +140,8 @@ int main(int argc, char *argv[])
     return 0;
 }
 
+int should_skip(void) __attribute__((weak));
+int should_skip(void)
+{
+    return 0;
+}
