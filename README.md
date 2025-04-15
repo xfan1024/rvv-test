@@ -8,8 +8,8 @@
 
 **SG2044**
 
-Operation System: openEuler 24.03 (LTS)
-        Compiler: clang version 17.0.6 ( 17.0.6-16.oe2403)
+- Operation System: openEuler 24.03 (LTS)
+- Compiler: clang version 17.0.6 ( 17.0.6-16.oe2403)
 
 | Executable   | norm       | normalize  |
 | ------------ | ---------- | ---------- |
@@ -31,8 +31,8 @@ Operation System: openEuler 24.03 (LTS)
 
 **Spacemit(R) X60**
 
-Operation System: Bianbu 2.1.1
-        Compiler: Bianbu clang version 18.1.8 (11bb4)
+- Operation System: Bianbu 2.1.1
+- Compiler: Bianbu clang version 18.1.8 (11bb4)
 
 | Executable   | norm       | normalize  |
 | ------------ | ---------- | ---------- |

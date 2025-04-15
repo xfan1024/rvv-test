@@ -20,8 +20,8 @@ compiler_version(){
 
 echo "**$(cpuname)**"
 echo
-echo "Operation System: $(osname)"
-echo "        Compiler: $(compiler_version)"
+echo "- Operation System: $(osname)"
+echo "- Compiler: $(compiler_version)"
 echo
 printf "| %-12s | %-10s | %-10s |\n" "Executable" "norm" "normalize"
 printf "| %-12s | %-10s | %-10s |\n" "------------" "----------" "----------"
